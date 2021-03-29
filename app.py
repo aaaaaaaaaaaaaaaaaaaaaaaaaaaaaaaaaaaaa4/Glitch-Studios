@@ -22,4 +22,4 @@ def index():
   conn = get_db_connection()
   posts = conn.execute('SELECT * FROM posts').fetchall()
   conn.close()
-  return render_template('templates/index.html',posts=posts)
+  return render_template('index.html',posts=posts)
